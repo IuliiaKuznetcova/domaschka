@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HW05082022</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+    }
+
+    .header__title {
+      font-family: Libre Bodoni, serif;
+      text-transform: uppercase;
+      line-height: 250%;
+      letter-spacing: 5px;
+      word-spacing: 15px;
+      position: absolute;
+      text-align: center;
+      margin-top: 4rem;
+      z-index: 1;
+    }
+
+    .card {
+      width: 100%;
+      display: flex; /* поставить в ряд */
+      /* flex-wrap: wrap; */
+      justify-content: center; /* поставить по центру */
+      padding: 15px;
+      gap: 7rem; /* ширина между колонками */
+    }
+
+    .card__items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /*  width: 20%; */
+
+      padding: 5px;
+      margin-top: 10rem;
+    }
+
+    .card__items--average {
+      /* средняя колонка */
+      padding-top: 75px;
+    }
+
+    .card__img {
+      opacity: 0.95;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h3 class="header__title">
+        I'm only a listener in this group<br />and I don't do homework here
+        <br />please understand and forgive
+      </h3>
+    </div>
+    <div class="card">
+      <div class="card__items">
+        <img class="card__img" src="./img4.jpg" alt="" />
+      </div>
+      <div class="card__items card__items--average">
+        <img class="card__img" src="./img5.jpg" alt="" />
+      </div>
+      <div class="card__items">
+        <img class="card__img" src="./img6.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
